@@ -50,3 +50,38 @@ footer {
   font-size: 14px;
   color: #777;
 }
+
+.appointment-box {
+  background-color: #f9f9ff;
+  padding: 20px;
+  margin-top: 30px;
+  border: 2px dashed #6c63ff;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.appointment-box h3 {
+  color: #6c63ff;
+  margin-bottom: 10px;
+}
+
+.appointment-box p {
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #6c63ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #4e47cc;
+}
+
