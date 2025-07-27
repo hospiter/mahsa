@@ -2,11 +2,134 @@
 <html lang="fa">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>وبلاگ دکتر آینده</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Vazir', sans-serif;
+      background-color: #f0f0f5;
+      direction: rtl;
+    }
+
+    nav {
+      background-color: #6c63ff;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      text-align: center;
+      color: #6c63ff;
+    }
+
+    .profile {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 30px;
+    }
+
+    .profile-img {
+      width: 200px;
+      border-radius: 15px;
+      margin-left: 20px;
+    }
+
+    .info {
+      flex: 1;
+      font-size: 16px;
+    }
+
+    .appointment-box {
+      background-color: #f9f9ff;
+      padding: 20px;
+      margin-top: 30px;
+      border: 2px dashed #6c63ff;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    .appointment-box h3 {
+      color: #6c63ff;
+      margin-bottom: 10px;
+    }
+
+    .appointment-box p {
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 25px;
+      background-color: #6c63ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #4e47cc;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #ccc;
+      font-size: 14px;
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      .profile {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .profile-img {
+        margin: 0 auto 20px auto;
+      }
+    }
+  </style>
 </head>
 <body>
+
+  <!-- ✅ منوی بالا -->
+  <nav>
+    <a href="index.html">خانه</a>
+    <a href="about.html">رزرو نوبت</a>
+    <a href="gallery.html">گالری</a>
+    <a href="tips.html">نکات بهداشتی</a>
+    <a href="testimonials.html">نظرات</a>
+    <a href="contact.html">تماس با ما</a>
+  </nav>
+
+  <!-- ✅ محتوای اصلی -->
   <div class="container">
     <header>
       <h1>دکتر آینده، ستاره‌ای در آسمان‌ها</h1>
@@ -20,17 +143,20 @@
           او دختر بسیار خاصی است که در مسیر تبدیل شدن به یکی از بهترین دندان‌پزشک‌های کشور قدم برمی‌دارد.
           با قلبی پر از عشق و رویا، هر روز در حال درخشش است؛ مثل ستاره‌ای که در آسمان‌ها می‌درخشد.
         </p>
-        <div class="appointment-box">
-  <h3>رزرو نوبت دندان‌پزشکی</h3>
-  <p>برای انتخاب خدمات و گرفتن وقت قبلی، روی دکمه زیر کلیک کنید.</p>
-  <a href="about.html" class="btn">رزرو نوبت</a>
-</div>
       </div>
     </section>
 
+    <!-- ✅ باکس رزرو نوبت -->
+    <div class="appointment-box">
+      <h3>رزرو نوبت دندان‌پزشکی</h3>
+      <p>برای انتخاب خدمات و گرفتن وقت قبلی، روی دکمه زیر کلیک کنید.</p>
+      <a href="about.html" class="btn">رزرو نوبت</a>
+    </div>
+
     <footer>
-      <p>make by hospiter</p>
+      <p>make by hospiter (sphrdemi)</p>
     </footer>
   </div>
+
 </body>
 </html>
