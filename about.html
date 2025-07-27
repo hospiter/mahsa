@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>رزرو نوبت</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f0f0f5;
+      direction: rtl;
+      text-align: right;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #6c63ff;
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 25px;
+      background-color: #6c63ff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #4e47cc;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      text-decoration: none;
+      color: #6c63ff;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>رزرو نوبت دندان‌پزشکی</h1>
+    
+    <form action="#" method="post">
+      <label for="name">نام کامل:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">شماره تماس:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="service">نوع خدمات:</label>
+      <select id="service" name="service">
+        <option>پر کردن دندان</option>
+        <option>کشیدن دندان</option>
+        <option>لمینت</option>
+        <option>ویزیت عمومی</option>
+      </select>
+
+      <label for="date">تاریخ نوبت:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">ساعت نوبت:</label>
+      <input type="time" id="time" name="time" required>
+
+      <button type="submit">رزرو کن</button>
+    </form>
+
+    <a href="index.html" class="back-link">⬅ بازگشت به صفحه اصلی</a>
+  </div>
+</body>
+</html>
